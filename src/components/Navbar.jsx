@@ -1,6 +1,7 @@
 import LOGO from '../assets/logosaas.webp';
 import Bar from '../assets/icons/Bar.svg'; 
 import { Link } from "react-router-dom";
+import { motion } from 'framer-motion';
 
 const Navbar = () => {
   return (
@@ -16,12 +17,12 @@ const Navbar = () => {
         </div>
         <nav className='hidden sm:flex'>
             <ul className='flex gap-6 items-center text-[#5e5f66]'>
-                <li><Link to = "/"> About </Link></li>
-                <li><Link to = "/features"> Features </Link></li>
-                <li><Link to = "/customers"> Customers</Link></li>
-                <li><Link to = "/updates"> Updates </Link></li>
-                <li><Link to = "/help"> Help </Link></li>   
-                <button className='py-2 px-4 rounded-lg bg-black text-[#efefef]'>Get for free</button>
+                <motion.li whileHover={{ scale: 1.1 }}><Link to = "/"> About </Link></motion.li>
+                <motion.li whileHover={{ scale: 1.1 }}><Link to = "/features"> Features </Link></motion.li>
+                <motion.li whileHover={{ scale: 1.1 }}><Link to = "/customers"> Customers</Link></motion.li>
+                <motion.li whileHover={{ scale: 1.1 }}><Link to = "/updates"> Updates </Link></motion.li>
+                <motion.li whileHover={{ scale: 1.1 }}><Link to = "/help"> Help </Link></motion.li>   
+                <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className='py-2 px-4 rounded-lg bg-black text-[#efefef]'>Get for free</motion.button>
             </ul>
         </nav>
     </div>

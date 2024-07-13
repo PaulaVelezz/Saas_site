@@ -2,6 +2,7 @@ import Arrow from '../assets/icons/Arrow.svg';
 import HERO_IMG from '../assets/images/Visual.webp';
 import HERO_IMG_MD from '../assets/images/Visual_md.webp';
 import CYLINDER from '../assets/images/cylinder 1.webp';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
@@ -20,8 +21,8 @@ const Hero = () => {
         <p className='text-xl text-[#010d3e]'>Celebrate the joy of accomplishment with an app designed to track your progress, motivate your efforts, and celebrate your successes.</p>
 
         <div className='flex items-center gap-4 font-medium'>
-          <button className='py-2 px-4 rounded-lg bg-black text-[#efefef]'>Get for free</button>
-          <button className='flex items-center gap-2 py-2 px-4'>Learn more  <Arrow /> </button>
+          <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className='py-2 px-4 rounded-lg bg-black text-[#efefef]'>Get for free</motion.button>
+          <motion.button whileHover={{ scale: 1.1 }} className='flex items-center gap-2 py-2 px-4'>Learn more  <Arrow /> </motion.button>
         </div>
       </div>
       <div className='mt-8 flex items-center place-content-center p-4 md:hidden'>
