@@ -10,8 +10,10 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <Hero />
+      <div className='bg-gradient-to-b from-[#eaeefe] to-[#3456ca]'>
+        <Navbar />
+        <Hero />
+      </div>
       <Banner />
       <MainProduct />
       <Pricing />

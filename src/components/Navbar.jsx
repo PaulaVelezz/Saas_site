@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className='flex items-center justify-between'>
-        <div className='flex items-center justify-between'>
+    <div className='flex items-center justify-between p-4'>
+        <div className='flex flex-row items-center justify-between gap-5'>
             <div className='relative'>
                 <div className='absolute top-2 bottom-0 w-full bg-[linear-gradient(to_right,#F87BFF,#FB92CF,#FFDD9B,#C2F0B1,#2FDBFE)] blur-md'></div>
                 <img src={LOGO} alt="saas_logo" className='h-12 w-12 relative' />
             </div>
-            <div className='sm:hidden'>
+            <div className='sm:hidden border border-black rounded-lg p-2'>
                 <Bar />
             </div>
         </div>
