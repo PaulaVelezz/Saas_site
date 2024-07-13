@@ -1,9 +1,9 @@
-import ACME from '../assets/logos/acme 1.png';
-import CELESTIA from '../assets/logos/celestia 1.png';
-import ECHO from '../assets/logos/echo 1.png';
-import PULSE from '../assets/logos/pulse 1.png';
-import QUANTUM from '../assets/logos/quantum 1.png';
-import APEX from '../assets/logos/apex 1.png';
+import ACME from '../assets/logos/acme.webp';
+import CELESTIA from '../assets/logos/celestia.webp';
+import ECHO from '../assets/logos/echo.webp';
+import PULSE from '../assets/logos/pulse.webp';
+import QUANTUM from '../assets/logos/quantum.webp';
+import APEX from '../assets/logos/apex.webp';
 import { motion } from 'framer-motion';
 
 const logos = [ACME, CELESTIA, ECHO, PULSE, QUANTUM, APEX];

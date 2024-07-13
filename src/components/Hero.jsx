@@ -1,7 +1,7 @@
 import Arrow from '../assets/icons/Arrow.svg'; 
 import HERO_IMG from '../assets/images/Visual.webp';
-import HERO_IMG_MD from '../assets/images/Visual_md.png';
-import CYLINDER from '../assets/images/cylinder 1.png';
+import HERO_IMG_MD from '../assets/images/Visual_md.webp';
+import CYLINDER from '../assets/images/cylinder 1.webp';
 
 const Hero = () => {
   return (
