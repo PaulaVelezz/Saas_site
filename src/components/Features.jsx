@@ -1,6 +1,5 @@
 import CUBE1 from '../assets/images/cube-helix 1.webp';
 import CUBE2 from '../assets/images/cube-helix.webp';
-import { motion } from 'framer-motion';
 
 
 const Features = () => {
@@ -19,7 +18,7 @@ const Features = () => {
         </div>
 
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-10 mt-10'>
-          <motion.figure className='border border-zinc-400 rounded-lg shadow-lg flex flex-col p-6' initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
+          <figure className='border border-zinc-400 rounded-lg shadow-lg flex flex-col p-6'>
             <img src={CUBE1} alt="cube" className='object-contain' />
             <figcaption className='text-center font-medium text-xl mt-9 text-[#010d3e]'>
               Integration ecosystem
@@ -28,9 +27,9 @@ const Features = () => {
               Enhance your productivity by connecting with your favorite tools, keeping all your
               essentials in one place.
             </p>
-          </motion.figure>
+          </figure>
 
-          <motion.figure className='border border-zinc-400 rounded-lg shadow-lg flex flex-col p-6' initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
+          <figure className='border border-zinc-400 rounded-lg shadow-lg flex flex-col p-6'>
             <img src={CUBE2} alt="cube" />
             <figcaption className='text-center font-medium text-xl mt-9 text-[#010d3e]'>
               Goal setting and tracking
@@ -38,7 +37,7 @@ const Features = () => {
             <p className='mt-4'>
             Define and track your goals, breaking down objectives into achievable tasks to keep your targets in sight.
             </p>
-          </motion.figure>
+          </figure>
         </div>
       </div>
     </section>

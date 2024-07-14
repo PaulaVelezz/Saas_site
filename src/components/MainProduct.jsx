@@ -4,7 +4,8 @@ import ICON_PRODUCT_2 from '../assets/icons/icon-product2.svg';
 import ICON_PRODUCT_3 from '../assets/icons/icon-product3.svg';
 import ICON_PRODUCT_4 from '../assets/icons/icon-product4.svg';
 import Arrow from '../assets/icons/Arrow.svg';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { useRef } from 'react';
 
 const GridInfo = [
   {
@@ -38,6 +39,16 @@ const GridInfo = [
 ];
 
 const MainProduct = () => {
+  const productImg = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target : productImg,
+    offset : ['start end', 'end end']
+  });
+
+  const rotateX = useTransform(scrollYProgress, [0, 1], [0, 14]);
+  const opacity = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
+
   return (
     <section className='py-[50px] p-4 bg-gradient-to-b from-[#ffffff] to-[#d5deff]'>
       <div className='flex flex-col justify-center items-center text-center'>
@@ -52,12 +63,18 @@ const MainProduct = () => {
             in just minutes with the set of free components for Framer.
           </p>
         </div>
-        <div>
-          <img src={PRODUCT_IMAGE} alt="screen shot" />
-        </div>
+        <motion.div
+          style={{
+            opacity: opacity,
+            rotateX: rotateX,
+            transformPerspective: "800px",
+          }}
+        >
+          <img ref={productImg} src={PRODUCT_IMAGE} alt="screen shot" className='mt-10' />
+        </motion.div>
       </div>
 
-      <div className='flex flex-col items-center sm:flex-row gap-5'>
+      <div className='flex flex-col items-center sm:flex-row gap-5 mt-12'>
         {GridInfo.map((item) => (
           <div key={item.id} className='w-[260px]'>
             <motion.div whileHover={{ scale: 1.1 }} className='border border-zinc-400 rounded-lg flex flex-col justify-center gap-3 py-10 px-4 text-left sm:flex-1'>
