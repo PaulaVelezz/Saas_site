@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import Features from './components/Features';
 import Pricing from './components/Pricing';
 import Questions from './components/Questions';
-// import Footer from './components/Footer';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -20,7 +20,7 @@ function App() {
       <Features />
       <Pricing />
       <Questions />
-      {/* <Footer />  */}
+      <Footer /> 
     </>
   )
 }

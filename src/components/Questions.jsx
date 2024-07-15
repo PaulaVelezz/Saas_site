@@ -33,7 +33,7 @@ const Questions = () => {
     <section className="bg-gradient-to-b from-[#5370d3] to-black py-20">
       <div className="text-[#efefef]">
         <h2 className="text-center text-5xl font-semibold">Frequently asked questions</h2>
-        <div className="mt-10">
+        <div className="mt-10 max-w-[648px] mx-auto">
           {FAQItem.map((item, index) => (
             <div key={index} className="flex flex-col items-start justify-center gap-5 p-6 border-b border-zinc-400">
               <div className="flex-1 justify-between items-center flex w-full text-lg font-semibold" onClick={() => handleExpand(item.question)}>
