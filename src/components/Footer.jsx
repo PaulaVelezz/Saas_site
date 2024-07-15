@@ -14,7 +14,12 @@ const Footer = () => {
     <footer className='bg-black text-white p-4 py-10'>
       <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2'>
         <div className='flex flex-col items-start gap-5'>
-          <img className='h-12 w-12' src={LOGO} alt="logo" />
+
+          <div className='relative'>
+            <div className='absolute top-2 bottom-0 w-full bg-[linear-gradient(to_right,#F87BFF,#FB92CF,#FFDD9B,#C2F0B1,#2FDBFE)] blur-md'></div>
+            <img className='relative h-12 w-12' src={LOGO} alt="logo" />
+          </div>
+
           <p className='max-w-sm'>Effortlessly turn your ideas into a fully functional, responsive, no-code SaaS website.</p>
           
           <ul className='flex flex-row items-center gap-4 mt-5'>

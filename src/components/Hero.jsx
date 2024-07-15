@@ -18,7 +18,7 @@ const Hero = () => {
           </span>
         </div>
         
-        <p className='text-xl text-[#010d3e]'>Celebrate the joy of accomplishment with an app designed to track your progress, motivate your efforts, and celebrate your successes.</p>
+        <p className='max-w-3xl text-xl text-[#010d3e]'>Celebrate the joy of accomplishment with an app designed to track your progress, motivate your efforts, and celebrate your successes.</p>
 
         <div className='flex items-center gap-4 font-medium'>
           <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className='py-2 px-4 rounded-lg bg-black text-[#efefef]'>Get for free</motion.button>
