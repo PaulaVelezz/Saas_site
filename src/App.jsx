@@ -7,6 +7,7 @@ import Testimonials from './components/Testimonials';
 import Pricing from './components/Pricing';
 import Questions from './components/Questions';
 import Footer from './components/Footer';
+import SignUp from './components/SignUp';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       <MainProduct />
       <Features />
       <Testimonials />
+      <SignUp />
       <Pricing />
       <Questions />
       <Footer /> 
