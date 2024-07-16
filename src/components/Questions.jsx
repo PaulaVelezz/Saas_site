@@ -30,9 +30,10 @@ const Questions = () => {
   };
 
   return (
-    <section className="bg-gradient-to-b from-[#5370d3] to-black py-20">
+    <section className="bg-gradient-to-b from-[#5370d3] to-black py-16">
       <div className="text-[#efefef]">
         <h2 className="text-center text-5xl font-semibold">Frequently asked questions</h2>
+        <p className='text-center text-xl font-medium mt-6'>Got questions? We've got answers.</p>
         <div className="mt-10 max-w-[648px] mx-auto">
           {FAQItem.map((item, index) => (
             <div key={index} className="flex flex-col items-start justify-center gap-5 p-6 border-b border-zinc-400">

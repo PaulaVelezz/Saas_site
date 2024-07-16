@@ -50,7 +50,7 @@ const MainProduct = () => {
   const opacity = useTransform(scrollYProgress, [0, 1], [0.5, 1]);
 
   return (
-    <section className='py-[50px] p-4 bg-gradient-to-b from-[#ffffff] to-[#d5deff]'>
+    <section className='py-[50px] p-4 bg-gradient-to-b from-[#ffffff] to-[#d5deff] flex flex-col gap-10'>
       <div className='flex flex-col justify-center items-center text-center'>
         <div>
           <span className='border border-zinc-400 rounded-lg py-1 px-3 font-medium'>Boost your productivity</span>
@@ -74,18 +74,18 @@ const MainProduct = () => {
         </motion.div>
       </div>
 
-      <div className='flex flex-col items-center sm:flex-row gap-5 mt-12'>
+      <div className='flex flex-col items-center justify-center sm:flex-row gap-10 py-14 mt-12'>
         {GridInfo.map((item) => (
           <div key={item.id} className='w-[260px]'>
-            <motion.div whileHover={{ scale: 1.1 }} className='border border-zinc-400 rounded-lg flex flex-col justify-center gap-3 py-10 px-4 text-left sm:flex-1'>
+            <div className='flex flex-col justify-center gap-3 py-10 px-4 text-left sm:flex-1'>
               {item.icon}
               <h3 className='font-semibold'>{item.title}</h3>
               <p>{item.description}</p>
-              <a href="#" className='flex items-center gap-2 font-semibold'>
+              <a href="#" className='flex items-center gap-2 font-semibold hover:underline'>
                 {item.cta}
                 <Arrow />
               </a>
-            </motion.div>
+            </div>
           </div>
         ))}
       </div>

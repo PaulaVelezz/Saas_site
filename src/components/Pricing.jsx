@@ -22,7 +22,7 @@ const PricingData = [
     features: [
       "Up to 50 project members",
       "Unlimited tasks and projects",
-      "500GB of storage",
+      "200GB of storage",
       "Integrations",
       "Priority support",
       "Advanced support",
@@ -37,21 +37,20 @@ const PricingData = [
     features: [
       "Up to 100 project members",
       "Unlimited tasks and projects",
-      "200GB of storage",
+      "500GB of storage",
       "Integrations",
       "Dedicated account manager",
       "Custom fields",
       "Advanced analytics",
       "Export capabilities",
       "API access",
-      "Advanced security features", 
     ],
   },
 ];
 
 const Pricing = () => {
   return (
-    <section className="py-[50px] p-4">
+    <section className="py-[50px] p-4 bg-gradient-to-b from-[#d6dfff] to-[#516ece]">
       <div className="flex flex-col justify-center items-center">
         <span className='border border-zinc-400 rounded-lg py-1 px-3 font-medium'>Boost your productivity</span>
         <h2 className='text-center font-semibold text-5xl sm:text-7xl tracking-tight mt-8'>
@@ -62,7 +61,7 @@ const Pricing = () => {
           Effortlessly turn your ideas into a fully functional, responsive, no-code SaaS website in just minutes with the set of free components for Framer.
           </p>
       </div>
-      <div className="flex justify-center flex-wrap mt-12 gap-5">
+      <div className="flex justify-center flex-wrap mt-12 gap-11">
         {PricingData.map((price, index) => (
           <PriceCard 
             key={index} 

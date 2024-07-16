@@ -22,7 +22,7 @@ const Hero = () => {
 
         <div className='flex items-center gap-4 font-medium'>
           <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className='py-2 px-4 rounded-lg bg-black text-[#efefef]'>Get for free</motion.button>
-          <motion.button whileHover={{ scale: 1.1 }} className='flex items-center gap-2 py-2 px-4'>Learn more  <Arrow /> </motion.button>
+          <motion.button whileHover={{ scale: 1.1 }} className='flex items-center gap-2 py-2 px-4 border border-zinc-500 rounded-lg'>Learn more  <Arrow /> </motion.button>
         </div>
       </div>
       <div className='mt-8 flex items-center place-content-center p-4 md:hidden'>

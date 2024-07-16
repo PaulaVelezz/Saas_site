@@ -30,6 +30,8 @@ const Footer = () => {
             <motion.li whileHover={{ scale: 1.2 }}> <a href="https://www.tiktok.com"> <Tiktok /></a> </motion.li>
             <motion.li whileHover={{ scale: 1.2 }}> <a href="https://www.youtube.com"> <Youtube /></a> </motion.li>
           </ul>
+          
+          <p className='py-3'>&#169; 2024 - Develop by <a href="https://www.github.com/PaulaVelezz">Paula Velez.</a></p>
         </div>
 
         <div className='grid grid-cols-1 md:grid-cols-4 gap-6'>
