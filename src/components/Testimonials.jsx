@@ -3,21 +3,66 @@ import TestimonialCard from './TestimonialCard';
 const Testimonial = [
     {
         id: 1,
-        name: 'John Doe',
+        name: 'Alex Rivera',
+        user: '@jamietechguru00',
         image: 'https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        description: 'As a seasoned designer always on the lookout for innovative tools. I was amazed at how quickly we were able to integrate this app into our workflow.',
     },
     {
         id: 2,
-        name: 'Jane Doe',
+        name: 'Casey Jordan',
+        user: '@caseyj',
         image: 'https://unavatar.io/github/jane',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        description: 'I was amazed at how quickly we were able to integrate this app into our workflow.',
     },
     {
         id: 3,
-        name: 'John Doe',
+        name: 'Jordan Patels',
+        user: '@jordanpatels',
         image: 'https://unavatar.io/github/mdo',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        description: 'Adopting this app for our team has streamlined our project management and improved communication across the board.',
+    },
+    {
+        id: 4,
+        name: 'Josh Smith',
+        user: '@jjsmith',
+        image: 'https://unavatar.io/github/jjsmith',
+        description: 'Our team’s productivity has skyrocketed since we started using this tool.',
+    },
+    {
+        id: 5,
+        name: 'Taylor Kim',
+        user: '@taylorkimm',
+        image: 'https://unavatar.io/github/martha',
+        description: 'Planning and executing events has never been easier. This app helps me keep track of all the moving parts, ensuring nothing slips through the cracks.',
+    },
+    {
+        id: 6,
+        name: 'Sam Dawson',
+        user: '@dawsontechtips',
+        image: 'https://unavatar.io/github/harper',
+        description: 'With this app, we can easily assign tasks, track progress, and manage documents all in one place.',
+    },
+    {
+        id: 7,
+        name: 'Morgan Lee',
+        user: '@morganleewhiz',
+        image: 'https://unavatar.io/github/morgan',
+        description: 'The customizability and integration capabilities of this app are top-notch.',
+    },
+    {
+        id: 8,
+        name: 'Riley Smith',
+        user: '@rileysmith1',
+        image: 'https://unavatar.io/github/riley',
+        description: 'This app has completely transformed how I manage my projects and deadlines.',
+    },
+    {
+        id: 9,
+        name: 'Casey Harper',
+        user: '@casey09',
+        image: 'https://unavatar.io/github/daine', 
+        description: 'Its user-friendly interface and robust features support our diverse needs.',
     },
 ];
 
@@ -38,6 +83,7 @@ const Testimonials = () => {
                         <TestimonialCard 
                             key={index} 
                             name={item.name} 
+                            user={item.user}
                             image={item.image} 
                             description={item.description}
                         />

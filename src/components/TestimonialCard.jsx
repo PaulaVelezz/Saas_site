@@ -2,18 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-const TestimonialCard = ({ name, image, description }) => {
+const TestimonialCard = ({ name, user, image, description }) => {
 
-    TestimonialCard.propTypes = {
-        name: PropTypes.string.isRequired,
-        image: PropTypes.string.isRequired,
-        description: PropTypes.string.isRequired,
-    };
+  TestimonialCard.propTypes = {
+    name: PropTypes.string.isRequired,
+    user: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+  };
 
   return (
-    <figure className="relative flex flex-col-reverse border-4 border-light-orange rounded-lg p-6 shadow-md">
+    <figure className="relative flex flex-col-reverse border-2 border-[#d1dbfd] rounded-lg py-10 px-8 shadow-lg gap-5">
       <figcaption className="flex flex-row items-center space-x-4">
-        <div className="text-base text-gray-900 font-bold flex text-center items-center gap-1">
+        <div className="text-base text-gray-900 flex text-center items-center gap-3">
           <img
             className="flex-none w-12 h-12 rounded-full object-cover"
             src={image}
@@ -21,10 +22,13 @@ const TestimonialCard = ({ name, image, description }) => {
             width={100}
             height={100}
           />
-          <span>{name}</span>
+          <div className='flex flex-col items-start'>
+            <span className="font-bold">{name}</span>
+            <span>{user}</span>
+          </div>
         </div>
       </figcaption>
-      <blockquote className="mt-6 text-gray-700">
+      <blockquote className="text-lg font-medium">
         <p>{description}</p>
       </blockquote>
     </figure>

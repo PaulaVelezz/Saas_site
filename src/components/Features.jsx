@@ -18,7 +18,7 @@ const Features = () => {
         </div>
 
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-11 mt-10'>
-          <figure className='max-w-md rounded-lg shadow-xl flex flex-col p-6'>
+          <figure className='max-w-md border-2 border-[#d1dbfd] rounded-lg shadow-xl flex flex-col p-6'>
             <img src={CUBE1} alt="cube" className='object-contain' />
             <figcaption className='text-center font-medium text-xl mt-9 text-[#010d3e]'>
               Integration ecosystem
@@ -29,7 +29,7 @@ const Features = () => {
             </p>
           </figure>
 
-          <figure className='max-w-md rounded-lg shadow-xl flex flex-col p-6'>
+          <figure className='max-w-md border-2 border-[#d1dbfd] rounded-lg shadow-xl flex flex-col p-6'>
             <img src={CUBE2} alt="cube" />
             <figcaption className='text-center font-medium text-xl mt-9 text-[#010d3e]'>
               Goal setting and tracking
