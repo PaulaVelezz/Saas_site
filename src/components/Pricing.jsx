@@ -3,7 +3,6 @@ import PriceCard from "./PriceCard";
 const PricingData = [
   {
     title: "Free",
-    sub: "",
     price: "$0",
     button: "Get started for free",
     features: [
@@ -16,7 +15,6 @@ const PricingData = [
   },
   {
     title: "Pro",
-    sub: "Most Popular",
     price: "$9",
     button: "Sign up now",
     features: [
@@ -31,7 +29,6 @@ const PricingData = [
   },
   {
     title: "Business",
-    sub: "",
     price: "$19",	
     button: "Sign up now",
     features: [
@@ -50,7 +47,7 @@ const PricingData = [
 
 const Pricing = () => {
   return (
-    <section className="py-[50px] p-4 bg-gradient-to-b from-[#d6dfff] to-[#516ece]">
+    <section className="pt-20 p-4 bg-gradient-to-b from-[#d6dfff] to-[#516ece]">
       <div className="flex flex-col justify-center items-center">
         <span className='border border-zinc-400 rounded-lg py-1 px-3 font-medium'>Boost your productivity</span>
         <h2 className='text-center font-semibold text-5xl sm:text-7xl tracking-tight mt-8'>
@@ -66,7 +63,6 @@ const Pricing = () => {
           <PriceCard 
             key={index} 
             title={price.title} 
-            sub={price.sub}
             price={price.price} 
             button={price.button} 
             features={price.features} 

@@ -4,7 +4,7 @@ import HELIX from '../assets/images/helix.webp';
 
 const SignUp = () => {
   return (
-    <section className='py-[50px] flex flex-col gap-5 items-center'>
+    <section className='py-20 flex flex-col gap-5 items-center'>
       <div className='max-w-xl relative'>
         <div>
           <img src={STAR} alt="star" className='absolute -top-[120px] right-[calc(100%+24px)]' />

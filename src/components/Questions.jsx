@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Plus from '../assets/icons/Plus.svg';
 import Minus from '../assets/icons/Minus.svg';
+import { AnimatePresence, motion } from 'framer-motion';
 
 const FAQItem = [
   {
@@ -30,21 +31,27 @@ const Questions = () => {
   };
 
   return (
-    <section className="bg-gradient-to-b from-[#5370d3] to-black py-16">
+    <section className="bg-gradient-to-b from-[#5370d3] to-black py-24">
       <div className="text-[#efefef]">
         <h2 className="text-center text-5xl font-semibold">Frequently asked questions</h2>
         <p className='text-center text-xl font-medium mt-6'>Got questions? We've got answers.</p>
         <div className="mt-10 max-w-[648px] mx-auto">
-          {FAQItem.map((item, index) => (
-            <div key={index} className="flex flex-col items-start justify-center gap-5 p-6 border-b border-zinc-400">
-              <div className="flex-1 justify-between items-center flex w-full text-lg font-semibold" onClick={() => handleExpand(item.question)}>
-                {item.question}
-                {isExpanded[item.question] && <span> <Minus className="h-7 border border-zinc-400 rounded-lg text-[#efefef]" /> </span>}
-                {!isExpanded[item.question] && <span> <Plus className="h-7 border border-zinc-400 rounded-lg text-[#efefef]" /> </span>}
-              </div>
-              { isExpanded[item.question] && <div className="flex-1 text-lg">{item.answer}</div> }
-            </div>
-          ))}
+          <AnimatePresence>
+            {FAQItem.map((item, index) => (
+              <motion.div key={index} initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} className="flex flex-col items-start justify-center gap-5 p-6 border-b border-zinc-400">
+                <div className="flex-1 justify-between items-center flex w-full text-lg font-semibold" onClick={() => handleExpand(item.question)}>
+                  {item.question}
+                  {isExpanded[item.question] && <span> <Minus className="h-7 border border-zinc-400 rounded-lg text-[#efefef]" /> </span>}
+                  {!isExpanded[item.question] && <span> <Plus className="h-7 border border-zinc-400 rounded-lg text-[#efefef]" /> </span>}
+                </div>
+                { isExpanded[item.question] && (
+                  <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} className="flex-1 text-lg">
+                    {item.answer}
+                  </motion.div> 
+                )}
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </div>
       </div>
     </section>

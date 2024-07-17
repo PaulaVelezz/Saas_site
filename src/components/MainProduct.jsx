@@ -74,7 +74,7 @@ const MainProduct = () => {
         </motion.div>
       </div>
 
-      <div className='flex flex-col items-center justify-center sm:flex-row gap-10 py-14 mt-12'>
+      <div className='flex flex-col flex-wrap items-center justify-center sm:flex-row gap-10 py-14 mt-12'>
         {GridInfo.map((item) => (
           <div key={item.id} className='w-[260px]'>
             <div className='flex flex-col justify-center gap-3 py-10 px-4 text-left sm:flex-1'>

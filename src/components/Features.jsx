@@ -1,10 +1,10 @@
-import CUBE1 from '../assets/images/cube-helix 1.webp';
-import CUBE2 from '../assets/images/cube-helix.webp';
+import CUBE1 from '../assets/images/cube-helix_1-t.webp';
+import CUBE2 from '../assets/images/cube-helix-t.webp';
 
 
 const Features = () => {
   return (
-    <section className='py-[50px] p-4'>
+    <section className='pt-20 p-4'>
       <div className='flex flex-col justify-center items-center text-center'>
         <div>
           <span className='border border-zinc-400 rounded-lg py-1 px-3 font-medium'>Everything you need</span>
