@@ -7,7 +7,12 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section className='h-full md:h-screen text-black'>
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1.2, ease: "easeInOut" }}
+      className='h-full md:h-screen text-black'
+     >
       <div className='flex flex-col gap-10 items-start p-4'>
         <span className='border border-zinc-400 rounded-lg py-1 px-3 font-medium'>Version 2.0 is here</span>
         <div>
@@ -38,7 +43,7 @@ const Hero = () => {
       <div className='hidden lg:block absolute bottom-0 right-80'>
         <img src={TORUS} alt="torus" />
       </div>
-    </section>
+    </motion.section>
   )
 }
 

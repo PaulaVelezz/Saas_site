@@ -58,7 +58,7 @@ const MainProduct = () => {
             A more effective way to <br /> 
             <span className='bg-gradient-to-b from-[#010515] to-[#010d3e] text-transparent bg-clip-text [-webkit-background-clip:text]' >track progress</span>
           </h2>
-          <p className='text-center font-medium text-xl mt-9 text-[#010d3e]'>
+          <p className='text-center font-medium text-xl mt-10 text-[#010d3e] max-w-6xl'>
             Effortlessly turn your ideas into a fully functional, responsive, no-code SaaS website 
             in just minutes with the set of free components for Framer.
           </p>

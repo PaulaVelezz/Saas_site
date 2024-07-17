@@ -1,4 +1,5 @@
 import TestimonialCard from './TestimonialCard';
+import { motion } from 'framer-motion';
 
 const Testimonial = [
     {
@@ -76,7 +77,12 @@ const Testimonials = () => {
             </h2>
         </div>
     
-        <div className="flex-1 max-w-full mx-auto p-10">
+        <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 1.2, ease: "easeInOut" }}
+            className="flex-1 max-w-full mx-auto p-10"
+        >
             <ul className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:gap-8 lg:grid-cols-3 lg:gap-5">
                 {Testimonial.map((item, index) => (
                     <li key={index}>
@@ -90,7 +96,7 @@ const Testimonials = () => {
                     </li>
                 ))}
             </ul>
-        </div>
+        </motion.div>
     </section>
   )
 }

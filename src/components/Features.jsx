@@ -1,8 +1,10 @@
 import CUBE1 from '../assets/images/cube-helix_1-t.webp';
 import CUBE2 from '../assets/images/cube-helix-t.webp';
+import { motion } from 'framer-motion';
 
 
 const Features = () => {
+
   return (
     <section className='pt-20 p-4'>
       <div className='flex flex-col justify-center items-center text-center'>
@@ -12,21 +14,26 @@ const Features = () => {
             Streamlined for<br /> 
             <span className='bg-gradient-to-b from-[#010515] to-[#010d3e] text-transparent bg-clip-text [-webkit-background-clip:text]'>easy management</span>
           </h2>
-          <p className='text-center font-medium text-xl mt-9 text-[#010d3e]'>
+          <p className='text-center font-medium text-xl mt-10 text-[#010d3e] max-w-6xl'>
             Enjoy customizable lists, team work tools, and smart tracking all in one place. Set tasks, get reminders, and see your progress simply and quickly.
           </p>
         </div>
 
-        <div className='grid grid-cols-1 sm:grid-cols-2 gap-11 mt-10'>
+        <motion.div 
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1.2, ease: "easeInOut" }}
+          className='grid grid-cols-1 sm:grid-cols-2 gap-11 mt-10'
+        >
           <figure className='max-w-md border-2 border-[#d1dbfd] rounded-lg shadow-xl flex flex-col p-6'>
             <img src={CUBE1} alt="cube" className='object-contain' />
             <figcaption className='text-center font-medium text-xl mt-9 text-[#010d3e]'>
               Integration ecosystem
             </figcaption>
-            <p className='mt-4'>
+            <blockquote className='mt-4'>
               Enhance your productivity by connecting with your favorite tools, keeping all your
               essentials in one place.
-            </p>
+            </blockquote>
           </figure>
 
           <figure className='max-w-md border-2 border-[#d1dbfd] rounded-lg shadow-xl flex flex-col p-6'>
@@ -34,11 +41,11 @@ const Features = () => {
             <figcaption className='text-center font-medium text-xl mt-9 text-[#010d3e]'>
               Goal setting and tracking
             </figcaption>
-            <p className='mt-4'>
+            <blockquote className='mt-4'>
             Define and track your goals, breaking down objectives into achievable tasks to keep your targets in sight.
-            </p>
+            </blockquote>
           </figure>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

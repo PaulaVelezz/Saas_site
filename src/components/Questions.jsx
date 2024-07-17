@@ -41,8 +41,8 @@ const Questions = () => {
               <motion.div key={index} initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} className="flex flex-col items-start justify-center gap-5 p-6 border-b border-zinc-400">
                 <div className="flex-1 justify-between items-center flex w-full text-lg font-semibold" onClick={() => handleExpand(item.question)}>
                   {item.question}
-                  {isExpanded[item.question] && <span> <Minus className="h-7 border border-zinc-400 rounded-lg text-[#efefef]" /> </span>}
-                  {!isExpanded[item.question] && <span> <Plus className="h-7 border border-zinc-400 rounded-lg text-[#efefef]" /> </span>}
+                  {isExpanded[item.question] && <span> <Minus className="h-7 border border-zinc-400 rounded-lg text-[#efefef] cursor-pointer" /> </span>}
+                  {!isExpanded[item.question] && <span> <Plus className="h-7 border border-zinc-400 rounded-lg text-[#efefef] cursor-pointer" /> </span>}
                 </div>
                 { isExpanded[item.question] && (
                   <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} className="flex-1 text-lg">
