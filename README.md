@@ -12,11 +12,24 @@ This project is a demo website for a SaaS product.
 - Framer-motion (v.11.3.2)
 - prop-types: (v.15.8.1)
 
+## 📌 DEPLOY: <br/>
+👉 https://saas-site-two.vercel.app/
+<br/>
+
 ## 📸 SCREENSHOOTS: <br/>
-[![212shots-so.png](https://i.postimg.cc/mDr6w03d/212shots-so.png)](https://postimg.cc/67D06bmR)
-[![99shots-so.png](https://i.postimg.cc/m21JKfvJ/99shots-so.png)](https://postimg.cc/9rVLqSFY)
-[![228shots-so.png](https://i.postimg.cc/W48H02ZF/228shots-so.png)](https://postimg.cc/SXXdhbDk)
-[![240shots-so.png](https://i.postimg.cc/tTmvm229/240shots-so.png)](https://postimg.cc/N9mxK83n)
+[![212shots-so.png](https://i.postimg.cc/sDVdQ0qN/212shots-so.png)](https://postimg.cc/V5HH24Yq)
+
+[![99shots-so.png](https://i.postimg.cc/3RMzKL29/99shots-so.png)](https://postimg.cc/FfZTpVWJ)
+
+[![228shots-so.png](https://i.postimg.cc/mZyKsykN/228shots-so.png)](https://postimg.cc/Rqqg1fcN)
+
+[![240shots-so.png](https://i.postimg.cc/5N9TNQFc/240shots-so.png)](https://postimg.cc/yW5vLdPn)
+
+[![796shots-so.png](https://i.postimg.cc/25WXX4gW/796shots-so.png)](https://postimg.cc/p92ZmnWV)
+
+[![248shots-so.png](https://i.postimg.cc/vBMXqCrR/248shots-so.png)](https://postimg.cc/wtfh3f4F)
+
+[![986shots-so.png](https://i.postimg.cc/NFjDYTCp/986shots-so.png)](https://postimg.cc/G86GxBCy)
 
 ## 📼 VIDEO:  <br/>
 👀 https://www.webmobilefirst.com/en/screencasts/lyKbrh-egc/
